@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 15px;
+}
+
+body::before {
+    content: '';
+    background: lightgreen;
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.profile {
+    border-radius: 8px;
+    border: 1px dashed red;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+
+img {
+    width: 100%;
+}
+
+.profile-content {
+    /* border: 1px solid red; */
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    border-left: 1px solid red;
+    padding: 5px;
+}
+
+.name:hover {
+    border-left: 2px solid red;
+}
